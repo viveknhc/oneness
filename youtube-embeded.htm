@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-play YouTube Video on Hover</title>
+    <style>
+        /* Optional: Add some styling to the video container */
+        .video-container {
+            position: relative;
+            width: 560px; /* Set the width of your iframe */
+            height: 315px; /* Set the height of your iframe */
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-container" onmouseover="playYouTubeVideo()" onmouseout="pauseYouTubeVideo()">
+    <iframe id="ytplayer" type="text/html" width="560" height="315"
+            src="https://www.youtube.com/embed/TlJ3QBJMqVg?enablejsapi=1&origin=https://example.com"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+    </iframe>
+</div>
+
+<script>
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('ytplayer', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        // Optional: Do something when the player is ready
+    }
+
+    function onPlayerStateChange(event) {
+        // Optional: Do something when the player's state changes
+    }
+
+    function playYouTubeVideo() {
+        player.playVideo();
+    }
+
+    function pauseYouTubeVideo() {
+        player.pauseVideo();
+    }
+</script>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+
+</body>
+</html>

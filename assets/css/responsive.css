@@ -1,0 +1,30 @@
+@media only screen and (max-width:1640px) {
+
+
+
+}
+
+@media only screen and (min-width:999px) {
+
+
+
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+
+
+}
+
+    /* tab */
+    @media only screen and (max-width:999px) {
+
+    }
+
+
+    /* ==========MOBILE============= */
+
+
+    @media only screen and (max-width:767px) {
+
+    }

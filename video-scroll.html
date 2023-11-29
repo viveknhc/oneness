@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+</head>
+
+<body>
+
+    <style>
+        .video-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-reveal {
+            line-height: 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .grow {
+            scale: 0;
+            width: 100%;
+        }
+
+        .banner {
+            height: 100vh;
+            background-color: red;
+        }
+    </style>
+
+    <div class="banner">
+
+    </div>
+        <section class="video-reveal">
+            <div class="video-box">
+                <video autoplay muted class="grow" src="assets/video/oneness-intro.mp4" width="100%">
+                </video>
+            </div>
+        </section>
+
+
+    <script src="assets/javascript/gsap.min.js"></script>
+    <script src="assets/javascript/scrollTrigger.min.js"></script>
+
+    <script>
+        const growTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".video-reveal",
+                scrub: 1.6,
+                start: "top 80%",
+                end: "bottom 100%",
+                ease: "power1.out",
+            }
+        });
+        growTl.to(".grow", {
+            duration: 1.2,
+            scale: 1
+        });
+        // growTl.to("#grow-tagline", {
+        //     duration: 0.4,
+        //     delay: -0.7,
+        //     opacity: 1,
+        //     y: 0
+        // });
+    </script>
+</body>
+
+</html>
