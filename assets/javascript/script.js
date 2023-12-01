@@ -42,3 +42,10 @@ a.forEach(item => {
 })
 
 
+
+// 
+
+$(window).scroll(function () {
+    var theta = $(window).scrollTop() / 600 % Math.PI;
+    $('#about-img').css({ transform: 'rotate(' + theta + 'rad)' });
+});

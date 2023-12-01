@@ -13,6 +13,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
 
@@ -25,45 +26,50 @@
   <header>
     <nav class="navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Oneness Media Mill</a>
+        <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo.png" alt="logo" ></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon"></span> -->
           <img class="toggle" src="assets/images/toggle.png" alt="">
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="container">
+            <div class="offcanvas-header">
+
+              <!-- <img class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" src="assets/images/toggle.png" alt=""> -->
+
+              <button class="nav-close-btn" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img class="toggle-colse" src="assets/images/close.png" alt="">
+              </button>
+
+            </div>
           </div>
+
+
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav  pe-3">
+
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" data-text="Home" aria-current="page" href="index">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" data-text="About" aria-current="page" href="about">About</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+
+              <li class="nav-item">
+                <a class="nav-link" data-text="Projects" aria-current="page" href="projects">Projects</a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" data-text="Contact" aria-current="page" href="contact">Contact</a>
+              </li>
+
             </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
           </div>
+
+
+
         </div>
       </div>
     </nav>
@@ -72,9 +78,6 @@
       <h1>hii</h1>
     </div>
   </header>
-
-
-
 
   <section class="text-olny-section">
     <div>
@@ -106,7 +109,6 @@
 
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-home-tab">
-
           <div class="row row-cols-1 row-cols-md-3 work-row">
             <div class="col">
               <div class="card h-100">
@@ -303,8 +305,6 @@
     </div>
   </section>
 
-
-
   <section class="whychoose">
     <div class="container">
       <div class="row g-5">
@@ -377,7 +377,6 @@
     </div>
   </section>
 
-
   <section class="testimonial">
     <div class="container">
       <div class="heading-box text-center">
@@ -427,19 +426,18 @@
     </div>
   </section>
 
-
   <section class="client-section">
     <div class="container">
       <div class="owl-carousel client-carousel">
-        <div class="item"><img class="img-fluid" src="assets/images/logo.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/logo.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/logo.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/logo.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/logo.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/logo.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/logo.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/logo.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/logo.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
       </div>
     </div>
   </section>
@@ -447,23 +445,24 @@
   <section class="contact-section">
     <div class="container">
       <div class="main-box">
-        <div class="contact-box">
+        <!-- <div class="contact-box">
           <div class="row">
-            <div class="col-lg-6">
-              <h5>Phone:</h5>
-              <p><a href="">123456789</a></p>
+            <div class="col-lg-6 col-6">
+              <h5 class="m-0">Phone:</h5>
+              <p class="m-0"><a href="">123456789</a></p>
             </div>
-            <div class="col-lg-6">
-              <h5>Phone:</h5>
-              <p><a href="">123456789</a></p>
+            <div class="col-lg-6 col-6">
+              <h5 class="m-0">Email:</h5>
+              <p class="m-0"><a href="">oneness@mail.com</a></p>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="left-box">
-
+          <div class="heading-box p-0 text-center">
+            <h2>Contact Us</h2>
+          </div>
           <form class="form" method="POST">
-
             <div class="form__input-group">
               <input class="form__input" type="text">
               <label class="form__input-label">Name</label>
@@ -475,35 +474,92 @@
             </div>
 
             <div class="form__input-group">
-              <input class="form__input" type="text">
-              <label class="form__input-label">Phone</label>
-            </div>
-
-            <div class="form__input-group">
               <textarea class="form__input" name="" id="" cols="30" rows="10"></textarea>
             </div>
 
             <button class="" type="submit">Send</button>
           </form>
-          <!-- <form action="">
-            <label for="">Name</label>
-            <input type="text">
 
-            <label for="">email</label>
-            <input type="text">
-
-            <label for="">phone</label>
-            <input type="text">
-            <label for="">Message</label>
-            <textarea name="" id="" cols="30" rows="10">
-
-            </textarea>
-          </form> -->
         </div>
       </div>
 
     </div>
   </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-box">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-about">
+              <img class="logo" src="assets/images/logo.png" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quod optio illum similique quo
+                accusamus,</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div>
+              <h5 class="footer-head">Quick links</h5>
+            </div>
+
+            <ul>
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Project</a>
+              </li>
+              <li>
+                <a href="">Contact Us</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 social-col">
+            <div class="social">
+              <div>
+                <h5 class="footer-head">Social</h5>
+              </div>
+              <ul>
+                <li>
+                  <a href=""><img src="assets/images/youtube.png" alt="">
+                    <p>@oneness</p>
+                  </a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/images/youtube.png" alt="">
+                    <p>@oneness</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a href=""><img src="assets/images/youtube.png" alt="">
+                    <p>@oneness</p>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-12 copyright">
+            <p>
+              Copyright © 2023 <span>Oneness meadia mill.</span> All Rights Reserved | Designed by Mentegoz Technologies
+            </p>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </footer>
 
 
   <script src="assets/javascript/SmoothScrollMouseWheel.js"></script>
@@ -518,10 +574,11 @@
   <script src="assets/javascript/gsap.min.js"></script>
   <script src="assets/javascript/scrollTrigger.min.js"></script>
 
-  <!-- <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.28/bundled/lenis.min.js"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.28/bundled/lenis.min.js"></script> -->
   <script src="https://unpkg.com/split-type"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   <script>
     const growTl = gsap.timeline({

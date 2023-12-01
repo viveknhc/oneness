@@ -1,30 +1,98 @@
-@media only screen and (max-width:1640px) {
+@media only screen and (max-width:1640px) {}
+
+@media only screen and (min-width:999px) {}
 
 
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {}
 
-}
-
-@media only screen and (min-width:999px) {
-
-
-
-}
+/* tab */
+@media only screen and (max-width:999px) {}
 
 
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+/* ==========MOBILE============= */
 
 
-}
+@media only screen and (max-width:767px) {
 
-    /* tab */
-    @media only screen and (max-width:999px) {
 
+    /* NAVBAR */
+
+    .offcanvas-body ul li a:before {
+        font-size: 4rem;
+    }
+
+    .offcanvas-body .nav-link {
+        color: #7e7e7e;
+        font-size: 25px;
     }
 
 
-    /* ==========MOBILE============= */
+    /* TEXT ONLY SECTION */
 
-
-    @media only screen and (max-width:767px) {
-
+    .text-olny-section h2 {
+        width: 80%;
+        font-size: 22px;
     }
+
+    /* VIDEO REVEAL */
+
+    .video-cards-section ul .nav-item .nav-link {
+        font-size: 12px;
+    }
+    .video-cards-section ul .nav-item .nav-link.active {
+        font-size: 12px;
+    }
+
+    /* WHY CHOOSE */
+
+    .whychoose {
+        padding: 45px 0 0 0;
+    }
+
+    .whychoose .whychoose-card h4 {
+        font-size: 18px;
+    }
+
+    .whychoose .whychoose-card p {
+        font-size: 14px;
+    }
+
+    /* TESTIMONIAL */
+
+    .testimonial-card-box .card {
+        padding: 14px;
+    }
+
+    /* CLIENT */
+
+    .client-carousel .item img {
+        width: 100%;
+    }
+
+    .client-section {
+        padding: 20px 0 0px 0;
+    }
+
+    .contact-section .contact-box {
+        padding: 15px 10px;
+        background-color: #ffffff;
+        position: static;
+        z-index: 11;
+        right: 0;
+        top: -35px;
+        width: 100%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+
+    .contact-section .main-box .left-box {
+        width: 100%;
+    }
+
+    .contact-section .contact-box a {
+        font-size: 16px;
+    }
+
+    .contact-section .contact-box h5 {
+        font-size: 14px;
+    }
+}

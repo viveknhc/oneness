@@ -35,7 +35,7 @@ $(document).ready(function () {
         // autoplayHoverPause: true,  
         responsive: {
             0: {
-                items: 1
+                items: 3
             },
             768: {
                 items: 3
