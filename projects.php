@@ -23,10 +23,10 @@
     <div class="cursor"></div>
     <div class="cursor2"></div>
 
-    <header>
-        <nav class="navbar">
+    <header class="project-page">
+        <nav class="navbar bg-transparent">
             <div class="container">
-                <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo.png" alt="logo" ></a>
+                <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <!-- <span class="navbar-toggler-icon"></span> -->
@@ -56,25 +56,247 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" data-text="Projects" aria-current="page" href="projects">Projects</a>
+                                <a class="nav-link" data-text="Projects" aria-current="page"
+                                    href="projects">Projects</a>
                             </li>
 
                             <li class="nav-item">
                                 <a class="nav-link" data-text="Contact" aria-current="page" href="contact">Contact</a>
                             </li>
-
                         </ul>
-
                     </div>
                 </div>
             </div>
         </nav>
+        <div class="project-banner">
+            <div class="container">
+                <div class="video-box">
+                    <video autoplay loop muted class="video" src="assets/video/projects/banner.mp4">
+                </div>
+    
+                <h1>Our projects <br> <span>visuals</span></h1>
+            </div>
+           
+        </div>
     </header>
 
 
 
-
-
+    <section class="video-cards-section">
+        <div class="container-fluid">
+    
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+                type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-cat1"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Catagory 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-cat2"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Catagory 2</button>
+            </li>
+          </ul>
+    
+    
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row row-cols-2 row-cols-md-3 work-row">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/uae-exchange1.png" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/uae-exchange1.png" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/uae-exchange2.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/uae-exchange3.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/uae-exchange4.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/ajaml-oudh.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/ajaml-oudh2.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/vajram.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/vajram2.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/vajram3.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/uae-exchange1.png" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/uae-exchange1.png" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-cat1" role="tabpanel" aria-labelledby="pills-profile-tab">
+    
+              <div class="row row-cols-1 row-cols-md-4 work-row">
+    
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/uae-exchange2.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/uae-exchange3.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/uae-exchange4.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/ajaml-oudh.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/ajaml-oudh2.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/vajram.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+    
+    
+              </div>
+    
+            </div>
+            <div class="tab-pane fade" id="pills-cat2" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row row-cols-1 row-cols-md-4 work-row">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/ajaml-oudh.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/ajaml-oudh2.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/vajram.jpg" class="card-img-top" alt="...">
+                    <div class="overlay">
+                      <img class="play-button" src="assets/images/play-button.png" alt="">
+                    </div>
+                  </div>
+                </div>
+    
+    
+              </div>
+            </div>
+          </div>
+    
+      
+    
+        </div>
+      </section>
+         
     <footer>
         <div class="container">
             <div class="footer-box">
@@ -139,7 +361,7 @@
 
                     <div class="col-lg-12 copyright">
                         <p>
-                            Copyright © 2023 <span>Oneness meadia mill.</span> All Rights Reserved | Designed by
+                            Copyright © 2023 <span>Oneness media mill.</span> All Rights Reserved | Designed by
                             Mentegoz Technologies
                         </p>
 

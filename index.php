@@ -109,7 +109,7 @@
 
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-home-tab">
-          <div class="row row-cols-1 row-cols-md-3 work-row">
+          <div class="row row-cols-2 row-cols-md-3 work-row">
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/uae-exchange1.png" class="card-img-top" alt="...">
@@ -308,7 +308,7 @@
   <section class="whychoose">
     <div class="container">
       <div class="row g-5">
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-6">
           <div>
             <h2>
               Why choose
@@ -319,47 +319,49 @@
           </div>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-6">
           <div class="whychoose-card">
             <h4>Reason 1</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
           </div>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-6">
           <div class="whychoose-card">
             <h4>Reason 1</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
           </div>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-6">
           <div class="whychoose-card">
             <h4>Reason 1</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
           </div>
         </div>
 
+        <div class="col-lg-3 col-6">
+          <div class="whychoose-card">
+            <h4>Reason 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
+          </div>
+        </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-6">
           <div class="whychoose-card">
             <h4>Reason 1</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
           </div>
         </div>
-        <div class="col-lg-3">
+
+        <div class="col-lg-3 col-6">
           <div class="whychoose-card">
             <h4>Reason 1</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="whychoose-card">
-            <h4>Reason 1</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
+
+        <div class="col-lg-3 col-6">
           <div class="whychoose-card">
             <h4>Reason 1</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
@@ -426,21 +428,7 @@
     </div>
   </section>
 
-  <section class="client-section">
-    <div class="container">
-      <div class="owl-carousel client-carousel">
-        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
-        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
-      </div>
-    </div>
-  </section>
+  
 
   <section class="contact-section">
     <div class="container">
@@ -483,6 +471,23 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+
+  <section class="client-section">
+    <div class="container">
+      <div class="owl-carousel client-carousel">
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+      </div>
     </div>
   </section>
 
@@ -549,7 +554,7 @@
 
           <div class="col-lg-12 copyright">
             <p>
-              Copyright © 2023 <span>Oneness meadia mill.</span> All Rights Reserved | Designed by Mentegoz Technologies
+              Copyright © 2023 <span>Oneness media mill.</span> All Rights Reserved | Designed by Mentegoz Technologies
             </p>
 
           </div>

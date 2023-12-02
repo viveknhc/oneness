@@ -1,0 +1,228 @@
+<style>
+    :root {
+        --primary-color: #1e7700;
+    }
+
+    #lvideo-wrap {
+        position: fixed;
+        padding: 12px;
+        height: 100vh;
+        display: flex;
+        z-index: 9991;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #lvideo-wrap,
+    #lvideo-wrap:after,
+    #lvideo-wrap .lvideo-overlay {
+        left: 0;
+        top: 0;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+        box-sizing: border-box;
+    }
+
+    #lvideo-wrap:after,
+    #lvideo-wrap .lvideo-overlay {
+        height: 100%;
+        position: absolute;
+    }
+
+    #lvideo-wrap:after {
+        content: "";
+        display: block;
+        background-color: var(--primary-color);
+        opacity: 0;
+        z-index: -1;
+    }
+
+    #lvideo-wrap .lvideo-container,
+    #lvideo-wrap video,
+    #lvideo-wrap iframe {
+        border-radius: 12px;
+        position: relative;
+        box-sizing: border-box;
+        background-color: #000;
+    }
+
+    #lvideo-wrap .lvideo-container {
+        width: 95%;
+        z-index: 5;
+    }
+
+    #lvideo-wrap video,
+    #lvideo-wrap iframe {
+        z-index: 10;
+        box-shadow: 0 0 19px rgba(0, 0, 0, 0.16);
+        width: 100%;
+        height: 100vh;
+        max-height: 85vh;
+        display: block;
+    }
+
+    #lvideo-wrap video {
+        object-fit: cover;
+    }
+
+    #lvideo-wrap .lvideo-close {
+        background-color: #fff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        width: 42px;
+        height: 42px;
+        border-radius: 100%;
+        border: solid 2px var(--primary-color);
+        padding: 0;
+        transition: all 0.3s ease-in-out;
+        z-index: 150;
+    }
+
+    #lvideo-wrap .lvideo-close:before,
+    #lvideo-wrap .lvideo-close:after {
+        content: "";
+        width: 60%;
+        height: 3px;
+        background-color: var(--primary-color);
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #lvideo-wrap .lvideo-close:before {
+        transform: rotate(42deg);
+    }
+
+    #lvideo-wrap .lvideo-close:after {
+        transform: rotate(-42deg);
+    }
+
+    #lvideo-wrap .lvideo-close:focus {
+        outline: none;
+    }
+
+    #lvideo-wrap .lvideo-close:hover {
+        background-color: var(--primary-color);
+    }
+
+    #lvideo-wrap .lvideo-close:hover:before,
+    #lvideo-wrap .lvideo-close:hover:after {
+        background-color: #fff;
+    }
+
+    #lvideo-wrap.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #lvideo-wrap.active:after {
+        opacity: 0.5;
+    }
+
+    @media (max-width: 1659px) and (min-width: 1330px) {
+        #lvideo-wrap .lvideo-container {
+            max-width: 978px;
+        }
+    }
+
+    @media (min-width: 1660px) {
+        #lvideo-wrap .lvideo-container {
+            max-width: 80%;
+        }
+    }
+
+</style>
+
+<h1>Video Modal for YouTube, Vimeo & HTML5 Video</h1>
+
+<br> <br> <br>
+
+<button class="lvideo" data-url="https://www.youtube.com/watch?v=FWGyiSTQ0yo">Play Youtube Video</button>
+
+<script>
+
+    document.querySelectorAll(".lvideo").forEach((d) => d.addEventListener("click", playVideos));
+    const body = document.body;
+
+    function playVideos(e) {
+        lvideo(e.currentTarget.dataset.url);
+
+        body.classList.add("lvideo-active");
+
+        var lvideoWrap = document.createElement("DIV");
+        lvideoWrap.setAttribute("id", "lvideo-wrap");
+        document.body.appendChild(lvideoWrap);
+
+        // console.log(this.dataset.url)
+        // console.log(this.dataset.video)
+
+        const wrapper = document.getElementById("lvideo-wrap");
+        wrapper.classList.add("active");
+
+        const url = this.dataset.url;
+
+        const startModal = `<span onclick="lvideoClose();" class="lvideo-overlay"></span> <div class="lvideo-container">`;
+        const finishModal = `</div><button onclick="lvideoClose();" class="lvideo-close">x</button>`;
+
+        // if (url.indexOf("youtube") !== -1) {
+        if (url.indexOf("youtube") !== -1 || url.indexOf("youtu") !== -1) {
+            //console.log("is youtube")
+
+            const ytUrl = [this.dataset.url];
+
+            var i,
+                r,
+                regExp = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/;
+
+            for (i = 0; i < ytUrl.length; ++i) {
+                r = ytUrl[i].match(regExp);
+                //console.log(r[1])
+
+                document.getElementById(
+                    "lvideo-wrap"
+                ).innerHTML = `${startModal}<iframe width="560" height="315" title="YouTube Video" src='https://www.youtube.com/embed/${r[1]}?rel=0&autoplay=1&mute=1&loop=1&playlist=${r[1]}' frameborder="0" allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>${finishModal}`;
+            }
+        } else if (url.indexOf("vimeo") !== -1) {
+            // console.log("is Vimeo")
+
+            const vimeoURL = this.dataset.url;
+            const regExp = /https:\/\/(www\.)?vimeo.com\/(\d+)($|\/)/;
+
+            const match = vimeoURL.match(regExp);
+
+            if (match) {
+                document.getElementById(
+                    "lvideo-wrap"
+                ).innerHTML = `${startModal}<iframe title="Vimeo" src="https://player.vimeo.com/video/${match[2]}?autoplay=1&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>${finishModal}`;
+            } else {
+                alert("Not a Vimeo!  URL example:\n https://vimeo.com/120206922");
+            }
+
+        } else if (url.indexOf("mp4") !== -1 || url.indexOf("m4v") !== -1) {
+
+            document.getElementById(
+                "lvideo-wrap"
+            ).innerHTML = `${startModal}<video controls loop playsinline autoplay><source src='${this.dataset.url}' type="video/mp4"></video>${finishModal}`;
+        } else {
+            alert("No video link found.");
+        }
+    }
+
+    // CLOSE MODAL LVIDEO
+    const lvideoClose = () => {
+        body.classList.remove("lvideo-active");
+
+        const wrapper = document.getElementById("lvideo-wrap");
+        wrapper.parentNode.removeChild(wrapper);
+    };
+
+    // LAUNCH
+    function lvideo() { }
+
+</script>

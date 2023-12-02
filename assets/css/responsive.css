@@ -14,6 +14,9 @@
 
 @media only screen and (max-width:767px) {
 
+    .heading-box {
+        padding: 20px 0 20px 0;
+    }
 
     /* NAVBAR */
 
@@ -34,11 +37,27 @@
         font-size: 22px;
     }
 
+    /* VIDEO CARDS */
+
+    .video-cards-section {
+        padding: 0 10px;
+    }
+
+    .video-cards-section .card {
+        padding: 10px;
+    }
+
+    .video-cards-section .button-box {
+        margin-top: 20px;
+    }
+
+
     /* VIDEO REVEAL */
 
     .video-cards-section ul .nav-item .nav-link {
         font-size: 12px;
     }
+
     .video-cards-section ul .nav-item .nav-link.active {
         font-size: 12px;
     }
@@ -50,11 +69,19 @@
     }
 
     .whychoose .whychoose-card h4 {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .whychoose .whychoose-card p {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .whychoose h2:first-child {
+        font-size: 22px;
+    }
+
+    .whychoose h2:last-child {
+        font-size: 18px;
     }
 
     /* TESTIMONIAL */
@@ -95,4 +122,39 @@
     .contact-section .contact-box h5 {
         font-size: 14px;
     }
+
+    .contact-section .main-box .left-box {
+        padding: 0px 10px 0 10px;
+    }
+
+    /* ABOUT PAGE */
+    .about-page {
+        height: auto;
+    }
+
+    .video-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-page .content h1 {
+        font-size: 40px;
+    }
+
+    .about-us .content {
+        width: auto;
+        padding: 0 10px;
+    }
+    
+    .about-us {
+        height: auto;
+    }
+
+    /* PROJECT PAGE */
+
+    /* .project-page .project-banner h1 {
+        font-size: 50px;
+    } */
+    
+
 }

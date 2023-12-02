@@ -20,6 +20,7 @@
 
 
 
+
 :root {
     --white-col: #ffff;
     --black-col: #000000;
@@ -28,7 +29,7 @@
 
 /* NAVBAR */
 
-.logo{
+.logo {
     max-width: 100px;
 }
 
@@ -263,6 +264,7 @@ section {
 
 .video-cards-section {
     background-color: #000000;
+    padding: 0 60px;
 }
 
 .video-cards-section .card {
@@ -278,6 +280,8 @@ section {
     background: radial-gradient(#111 50%, #000 100%);
     overflow: hidden;
     cursor: pointer;
+    padding: 30px;
+    border: 0.1px solid #e5e5e51f;
 }
 
 .video-cards-section .card-img-top {
@@ -769,17 +773,17 @@ footer .copyright p {
 /* ABOUT PAGE */
 
 
-.about-page{
+.about-page {
     background-color: var(--black-col);
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    
+
 }
 
-.about-page video{
+.about-page video {
     object-fit: cover;
     /* width: 100vw; */
     overflow: hidden;
@@ -787,11 +791,11 @@ footer .copyright p {
     border-radius: 25px;
 }
 
-.about-page .content{
+.about-page .content {
     position: absolute;
     top: 50%;
     left: 46%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .about-page .content h1 {
@@ -800,12 +804,13 @@ footer .copyright p {
     font-family: 'heading-font';
 }
 
-.about-page .content h1 span{
+.about-page .content h1 span {
     color: yellow;
     display: inline;
+    font-family: 'heading-font';
 }
 
-.about-us{
+.about-us {
     background-color: var(--black-col);
     position: relative;
     height: 100vh;
@@ -814,19 +819,91 @@ footer .copyright p {
     align-items: center;
 }
 
-.about-us .mandala{
+.about-us .mandala {
     position: absolute;
     top: 50%;
-    right: -35%;
-    transform: translate(-50%,-50%);
+    right: -32%;
+    transform: translate(-50%, -50%);
+    opacity: 0.4;
 }
 
 
-.about-us .content{
+.about-us .content {
     width: 50%;
     margin: auto;
 }
 
-.about-us P{
-    color: #7b7b7b;
+.about-us P {
+    color: #e7e7e7;
+}
+
+.about-page .video-box {
+    display: inline-block;
+}
+
+
+/* PROJECT PAGE */
+
+.project-page {
+    background-image: url('../images/projects/banner.png');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.project-page .project-banner {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.project-page .project-banner .video {
+    object-fit: cover;
+    /* width: 100vw; */
+    overflow: hidden;
+    height: 50vh;
+    border-radius: 25px;
+}
+
+/* .project-page .project-banner .video-box{
+    border-right: 1px solid var(--white-col);
+    border-bottom: 1px solid var(--white-col);
+    border-radius: 0 0 25px 0;
+    padding: 20px;
+} */
+
+.project-page .project-banner h1 {
+    position: absolute;
+    color: #fff;
+    font-size: 70px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: 'heading-font';
+}
+
+.project-page .project-banner h1 span {
+    color: yellow;
+    font-family: 'heading-font';
+}
+
+
+/* Contact Page */
+
+.contact-page {
+    height: 85vh;
+    background-color: var(--black-col);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-page h1 {
+    font-family: 'heading-font';
+    color: var(--white-col);
+    font-size: 60px;
 }

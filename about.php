@@ -74,24 +74,26 @@
 
         <section class="about-page">
             <div class="container">
-                <div>
+                <div class="video-box">
                     <video autoplay loop muted class="video" src="assets/video/about/about.mp4"></video>
                 </div>
+<!-- 
+                <div>
+                    <img class="banner-shape" src="assets/images/about/mandala.png" alt="">
+                </div> -->
 
                 <div class="content">
                     <h1>
                         we create <br>
                         <span>
-                            thumbstopping
+                            thumb stopping
                         </span>
                         <br>
                         visuals
                     </h1>
                 </div>
             </div>
-
         </section>
-
     </header>
 
 
@@ -131,74 +133,72 @@
         </div>
     </section>
 
-
     <section class="whychoose">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-3">
-                    <div>
-                        <h2>
-                            Why choose
-                        </h2>
-                        <h2>
-                            Oneness Media Mill
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="whychoose-card">
-                        <h4>Reason 1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="whychoose-card">
-                        <h4>Reason 1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="whychoose-card">
-                        <h4>Reason 1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-3">
-                    <div class="whychoose-card">
-                        <h4>Reason 1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="whychoose-card">
-                        <h4>Reason 1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="whychoose-card">
-                        <h4>Reason 1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="whychoose-card">
-                        <h4>Reason 1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
-                    </div>
-                </div>
-
+          <div class="row g-5">
+            <div class="col-lg-3 col-6">
+              <div>
+                <h2>
+                  Why choose
+                </h2>
+                <h2>
+                  Oneness Media Mill
+                </h2>
+              </div>
             </div>
+    
+            <div class="col-lg-3 col-6">
+              <div class="whychoose-card">
+                <h4>Reason 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-6">
+              <div class="whychoose-card">
+                <h4>Reason 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-6">
+              <div class="whychoose-card">
+                <h4>Reason 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-6">
+              <div class="whychoose-card">
+                <h4>Reason 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-6">
+              <div class="whychoose-card">
+                <h4>Reason 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-6">
+              <div class="whychoose-card">
+                <h4>Reason 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-6">
+              <div class="whychoose-card">
+                <h4>Reason 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui ratione. Atque,</p>
+              </div>
+            </div>
+    
+          </div>
         </div>
-    </section>
-
-
-
+      </section>
 
 
     <footer>
@@ -265,7 +265,7 @@
 
                     <div class="col-lg-12 copyright">
                         <p>
-                            Copyright © 2023 <span>Oneness meadia mill.</span> All Rights Reserved | Designed by
+                            Copyright © 2023 <span>Oneness media mill.</span> All Rights Reserved | Designed by
                             Mentegoz Technologies
                         </p>
 
