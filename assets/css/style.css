@@ -7,6 +7,17 @@
     font-family: 'heading-font';
     src: url('../fonts/Fontspring-DEMO-allroundgothic-book.otf') format('opentype');
 
+    font-family: 'apple-font';
+    src: url('../fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF');
+
+    /* font-family: 'apple-font-bold';
+    src:url('../fonts/sf-pro-display-cufonfonts/SFPRODISPLAYBOLD.OTF') */
+
+}
+
+@font-face {
+    font-family: 'apple-font-bold';
+    src: url('../fonts/sf-pro-display-cufonfonts/SFPRODISPLAYBOLD.OTF')
 }
 
 * {
@@ -14,7 +25,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'apple-font';
     /* font-family: 'heading-font'; */
 }
 
@@ -24,7 +35,7 @@
 :root {
     --white-col: #ffff;
     --black-col: #000000;
-    --hash-col: #555555;
+    --hash-col: #86868b;
 }
 
 /* NAVBAR */
@@ -246,18 +257,113 @@ section {
     width: 70%;
     margin: auto;
     color: var(--hash-col);
+
+    font-family: 'apple-font-bold';
     font-size: 50px;
-    font-family: 'heading-font';
+    line-height: 1.0714285714;
+    font-weight: 600;
+    letter-spacing: -0.005em;
 }
 
 .text-olny-section h2 .char {
-    font-family: 'heading-font';
+    font-family: 'apple-font';
+    font-size: 70px;
 }
 
 .text-olny-section h2 span {
     color: var(--white-col);
-    font-family: 'heading-font';
+    font-family: 'apple-font-bold';
+    font-size: 50px;
+    line-height: 1.0714285714;
+    font-weight: 600;
+    letter-spacing: -0.005em;
 }
+
+
+/*  WORK SECTION */
+
+.work-section {
+    height: 100vh;
+    background-color: #101010;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.work-section  .swiper-wrapper{
+    display: flex;
+    align-items: center;
+  }
+
+
+.work-section .work-card-box {
+    background-color: gold;
+}
+
+
+.work-section .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.work-section .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.work-section .swiper-slide .img-box{
+    height: 100%;
+    width: 100%;
+}
+
+.work-section .swiper-slide .img-box img {
+    height: 50vh;
+    width: 100%;
+    border-radius: 25px;
+    transition: height 0.3s ease;
+    object-fit: cover;
+
+
+}
+
+.work-section .swiper-slide-active .img-box img{
+    height: 55vh;
+    border-radius: 25px;
+
+}
+
+
+.work-section .swiper-slide:nth-child(2n) {
+    width: 40%;
+}
+
+
+.work-section .heading-swiper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.work-section .heading-swiper h6{
+    font-size: 22px;
+    
+    margin: 0;
+}
+
+.work-section .heading-swiper h6 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.work-section .heading-swiper i{
+    font-size: 23px;
+    color: #fff;
+}
+
 
 
 /* VIDEO CARDS */
@@ -416,7 +522,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    height: 100vh;
     background-color: var(--black-col);
 }
 
@@ -427,21 +533,50 @@ section {
 
 /* WHYCHOOSE */
 
-.whychoose {
+
+
+.whychoose{
+    background-color: #000000;
+}
+
+.whychoose .whychoose-box{
+    background-color: #101010;
+    border-radius: 10px;
+    padding: 28px;
+}
+
+.whychoose .whychoose-box h2{
+    font-size: 40px;
+    color: #bababa;
+    font-family: 'apple-font';
+    font-weight: 600;
+}
+
+.whychoose .whychoose-box p{
+    font-size: 30px;
+    color: #bababa;
+    font-family: 'apple-font';
+    font-weight: 100;
+}
+
+
+
+
+/* .whychoose {
     background-color: var(--black-col);
     padding: 100px 0 0 0;
 }
 
 .whychoose h2:first-child {
     color: var(--white-col);
-    /* text-transform: uppercase; */
-    font-family: 'heading-font';
+    text-transform: uppercase;
+    font-family: 'apple-font';
 }
 
 .whychoose h2:last-child {
     font-size: 25px;
     color: var(--hash-col);
-    font-family: 'heading-font';
+    font-family: 'apple-font';
 }
 
 .whychoose .whychoose-card h4 {
@@ -450,18 +585,27 @@ section {
 
 .whychoose .whychoose-card p {
     color: var(--hash-col);
-}
+} */
 
 /* TESTIMONIAL */
 
 .testimonial {
     background-color: var(--black-col);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .heading-box h2 {
-    color: var(--white-col);
-    /* text-transform: uppercase; */
-    font-family: 'heading-font';
+    font-family: 'apple-font';
+    color: #86868b;
+    font-family: 'apple-font-bold';
+    font-size: 54px;
+
+    line-height: 1.0714285714;
+    font-weight: 600;
+    letter-spacing: -0.005em;
 }
 
 .testimonial-card-box {
@@ -482,7 +626,7 @@ section {
 
 .testimonial-card-box h5 {
     color: var(--white-col);
-    font-family: 'heading-font';
+    font-family: 'apple-font';
 }
 
 .testimonial-card-box .designation {
@@ -711,7 +855,7 @@ footer .footer-head {
     padding: 0 0 12px 0;
     font-weight: 700;
     color: var(--white-col);
-    font-family: 'heading-font';
+    font-family: 'apple-font';
 }
 
 footer ul {
@@ -801,13 +945,13 @@ footer .copyright p {
 .about-page .content h1 {
     font-size: 70px;
     color: var(--white-col);
-    font-family: 'heading-font';
+    font-family: 'apple-font';
 }
 
 .about-page .content h1 span {
     color: yellow;
     display: inline;
-    font-family: 'heading-font';
+    font-family: 'apple-font';
 }
 
 .about-us {
@@ -883,12 +1027,12 @@ footer .copyright p {
     font-size: 70px;
     top: 50%;
     transform: translate(0, -50%);
-    font-family: 'heading-font';
+    font-family: 'apple-font';
 }
 
 .project-page .project-banner h1 span {
     color: yellow;
-    font-family: 'heading-font';
+    font-family: 'apple-font';
 }
 
 
@@ -903,7 +1047,7 @@ footer .copyright p {
 }
 
 .contact-page h1 {
-    font-family: 'heading-font';
+    font-family: 'apple-font';
     color: var(--white-col);
     font-size: 60px;
 }

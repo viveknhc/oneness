@@ -7,13 +7,15 @@ $(document).ready(function () {
         // autoplayHoverPause: true,  
         responsive: {
             0: {
-                items: 1
+                items: 1,
+
             },
-            768: {
-                items: 1
+            600: {
+                items: 2,
+
             },
-            992: {
-                items: 1
+            1000: {
+                items: 2
             }
         },
         nav: true,
@@ -35,14 +37,20 @@ $(document).ready(function () {
         // autoplayHoverPause: true,  
         responsive: {
             0: {
-                items: 3
+                items: 3,
+
             },
-            768: {
-                items: 3
+            600: {
+                items: 3,
+
             },
-            992: {
-                items: 5
+            1000: {
+                items: 4,
             }
         }
     });
 });
+
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Video Playback</title>
+
+    <style>
+        .demo-sec {
+            height: 100vh;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="demo-sec">
+
+    </section>
+
+    <section id="video-section">
+        <h2>Welcome to the Video Section!</h2>
+        <video id="myVideo" width="640" height="360" loop>
+            <source src="assets/video/oneness-intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <script>
+        // Get the video element
+        var video = document.getElementById("myVideo");
+
+        // Get the video section
+        var videoSection = document.getElementById("video-section");
+
+        // Create an Intersection Observer
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                // If the video section enters the viewport, play the video
+                if (entry.isIntersecting) {
+                    video.play();
+                } else {
+                    // Pause the video if it's not in the viewport
+                    video.pause();
+                }
+            });
+        }, { threshold: 0.5 }); // You can adjust the threshold as needed
+
+        // Start observing the video section
+        observer.observe(videoSection);
+    </script>
+
+</body>
+
+</html>

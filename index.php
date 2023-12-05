@@ -12,6 +12,12 @@
     integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 
@@ -26,7 +32,7 @@
   <header>
     <nav class="navbar">
       <div class="container">
-        <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo.png" alt="logo" ></a>
+        <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon"></span> -->
@@ -88,7 +94,60 @@
     </div>
   </section>
 
-  <section class="video-cards-section">
+  </style>
+
+  <section>
+    <div class="work-section">
+
+      <div class="container-fluid">
+
+        <div class="swiper mySwiper">
+          <div class="container">
+            <div class="heading-swiper">
+              <div class="heading-box text-start">
+                <h2>Our amazing works.</h2>
+              </div>
+              <div class="d-flex justify-content-center align-items-center">
+                <h6 class="pe-2"><a href="https://www.youtube.com/channel/UCS1sqd9yeZC79s1-6qOwvYA">See our youtube</a>
+                </h6>
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="assets/images/demo-vid.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="assets/images/demo-vid.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="assets/images/demo-vid.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="assets/images/demo-vid.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- <section class="video-cards-section">
     <div class="container-fluid">
 
       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -110,67 +169,74 @@
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-home-tab">
           <div class="row row-cols-2 row-cols-md-3 work-row">
+          
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/uae-exchange1.png" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="assets/images/uae-exchange1.png" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/uae-exchange2.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/uae-exchange3.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/uae-exchange4.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/ajaml-oudh.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/ajaml-oudh2.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/vajram.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
@@ -178,35 +244,25 @@
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/vajram2.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/vajram3.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="assets/images/uae-exchange1.png" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="assets/images/uae-exchange1.png" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
-                </div>
-              </div>
-            </div>
+         
+           
           </div>
         </div>
         <div class="tab-pane fade" id="pills-cat1" role="tabpanel" aria-labelledby="pills-profile-tab">
@@ -216,48 +272,60 @@
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/uae-exchange2.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/uae-exchange3.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/uae-exchange4.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/ajaml-oudh.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/ajaml-oudh2.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/vajram.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
@@ -271,24 +339,30 @@
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/ajaml-oudh.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/ajaml-oudh2.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
                 <img src="assets/images/vajram.jpg" class="card-img-top" alt="...">
-                <div class="overlay">
-                  <img class="play-button" src="assets/images/play-button.png" alt="">
+                 <div class="overlay">
+                  <a class="lvideo" href="https://www.youtube.com/watch?v=FWGyiSTQ0yo">
+                    <img class="play-button" src="assets/images/play-button.png" alt="">
+                  </a>
                 </div>
               </div>
             </div>
@@ -299,13 +373,13 @@
       </div>
 
       <div class="button-box text-center">
-        <a href="" class="btn primary-btn">View More</a>
+        <a href="projects" class="btn primary-btn">View More</a>
       </div>
 
     </div>
-  </section>
+  </section> -->
 
-  <section class="whychoose">
+  <!-- <section class="whychoose">
     <div class="container">
       <div class="row g-5">
         <div class="col-lg-3 col-6">
@@ -370,7 +444,70 @@
 
       </div>
     </div>
+  </section> -->
+
+
+
+  <section class="whychoose">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="whychoose-box">
+            <h2>
+              Lorem Ipsm
+            </h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adip  amet consectetur adip</p>
+
+            <a href="">
+              view our latest work on youtube
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="whychoose-box">
+            <h2>
+              Lorem Ipsm
+            </h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adip  amet consectetur adip</p>
+
+            <a href="">
+              view our latest work on youtube
+            </a>
+          </div>
+        </div>  <div class="col-lg-6">
+          <div class="whychoose-box">
+            <h2>
+              Lorem Ipsm
+            </h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adip  amet consectetur adip</p>
+
+            <a href="">
+              view our latest work on youtube
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="whychoose-box">
+            <h2>
+              Lorem Ipsm
+            </h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adip  amet consectetur adip</p>
+
+            <a href="">
+              view our latest work on youtube
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
 
   <section class="video-reveal">
     <div class="video-box">
@@ -381,7 +518,7 @@
 
   <section class="testimonial">
     <div class="container">
-      <div class="heading-box text-center">
+      <div class="heading-box text-start">
         <h2>Testimonials</h2>
       </div>
       <div class="owl-carousel testimonial-carousel">
@@ -428,7 +565,7 @@
     </div>
   </section>
 
-  
+
 
   <section class="contact-section">
     <div class="container">
@@ -447,7 +584,7 @@
         </div> -->
 
         <div class="left-box">
-          <div class="heading-box p-0 text-center">
+          <div class="heading-box p-0 text-start">
             <h2>Contact Us</h2>
           </div>
           <form class="form" method="POST">
@@ -478,6 +615,8 @@
   <section class="client-section">
     <div class="container">
       <div class="owl-carousel client-carousel">
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
+        <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
         <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
         <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
         <div class="item"><img class="img-fluid" src="assets/images/brand.png" alt="Slide 1"></div>
@@ -608,6 +747,8 @@
   </script>
 
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/javascript/swiper.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
@@ -632,6 +773,7 @@
 
     });
   </script>
+
 </body>
 
 </html>
